@@ -1,0 +1,90 @@
+:root {
+    --corFundoE: #5f008c;
+    --corTexto: #000000;
+    --corBotao: #858585;
+    --corBotao2: #000000;
+    --corLinkV: #ffffff;
+    --corLinkH: #ffffff;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+    background: url("https://ichef.bbci.co.uk/ace/standard/935/cpsprodpb/3eb4/live/72b357e0-8cb5-11ef-a464-bf92173bbfab.jpg") 
+        no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.login-container {
+    padding-top: 15px;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    background-color: #3c4770;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.login-container h1 {
+    margin-bottom: 15px;
+    color: var(--corBotao);
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--corBotao2);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--corBotao);
+    border: none;
+    border-radius: 5px;
+    color: var(--corTexto);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--corFundoE);
+}
+
+a:link {
+    color: var(--corBotao2);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--corLinkV);
+}
+
+a:hover {
+    color: var(--corLinkH);
+    text-decoration: underline;
+}
